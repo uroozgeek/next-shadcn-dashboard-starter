@@ -37,6 +37,20 @@ This file documents recurring patterns and standards used in the project.
 
 2. **Data Fetching**
    - Server Components for initial data
+
+4. **Database Patterns**
+   - Supabase client initialization in lib/
+   - Integration with Clerk auth for row-level security
+   - Real-time subscription setup
+   - Type-safe database queries
+
+5. **Data Access Patterns**
+   - Server-side Supabase queries with Clerk session
+   - Client-side real-time subscriptions
+   - Protected routes with Clerk middleware
+   - User-scoped database queries
+   - Error handling and retry logic
+
    - Server Actions for mutations
    - Client-side fetching for dynamic updates
 

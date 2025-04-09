@@ -37,3 +37,15 @@ This file records architectural and implementation decisions.
      - Server-side searching
      - Server-side filtering
      - URL-based pagination state
+     - Integration with Supabase queries
+
+5. [2025-04-08] **Database Implementation**
+   - Decision: Use Supabase as the database and backend service (excluding auth)
+   - Rationale: Provides PostgreSQL database and real-time capabilities
+   - Implementation:
+     - PostgreSQL database for data storage
+     - Real-time subscriptions for live updates
+     - Row-level security integrated with Clerk authentication
+     - Built-in API generation for data operations
+
+[2025-04-08 19:42:00] - Updated to clarify separation between Clerk auth and Supabase database responsibilities

@@ -24,6 +24,8 @@ A Next.js 15 Admin Dashboard Starter Template that provides a modern, feature-ri
 3. **Technical Stack**
    - Framework: Next.js 15 with App Router
    - Language: TypeScript
+   - Authentication: Clerk
+   - Database & Real-time: Supabase
    - Styling: Tailwind CSS v4
    - Components: Shadcn-ui
    - State Management: Zustand
@@ -31,6 +33,8 @@ A Next.js 15 Admin Dashboard Starter Template that provides a modern, feature-ri
    - Tables: Tanstack Data Tables
    - Search Params: Nuqs
    - Command Interface: kbar
+
+[2025-04-08 19:39:00] - Updated auth and database technology clarification
 
 ## Overall Architecture
 
