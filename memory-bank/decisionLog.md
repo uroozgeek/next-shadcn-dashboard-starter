@@ -49,3 +49,16 @@ This file records architectural and implementation decisions.
      - Built-in API generation for data operations
 
 [2025-04-08 19:42:00] - Updated to clarify separation between Clerk auth and Supabase database responsibilities
+
+6. [2025-04-09] **Organization Management Implementation**
+   - Decision: Use Clerk's organization management API for tenant switching
+   - Rationale: 
+     - Integrated with existing Clerk authentication
+     - Built-in organization management features
+     - Seamless multi-tenant support
+   - Implementation:
+     - Enhanced OrgSwitcher component with Clerk hooks
+     - Organization context provider for app-wide state
+     - Loading states and error handling
+     - Data refresh patterns on organization switch
+     - Access validation using Clerk's organization roles
