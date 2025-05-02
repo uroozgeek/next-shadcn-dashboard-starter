@@ -22,10 +22,63 @@ export const navItems: NavItem[] = [
     items: [] // Empty array as there are no child items for Dashboard
   },
   {
-    title: 'Product',
+    title: 'Brand',
     url: '/dashboard/product',
     icon: 'product',
     shortcut: ['p', 'p'],
+    isActive: false,
+    items: [] // No child items
+  },
+  {
+    title: 'Tasks',
+    url: '/dashboard/product',
+    icon: 'product',
+    shortcut: ['p', 'p'],
+    isActive: false,
+    items: [] // No child items
+  },
+  {
+    title: 'Projects',
+    url: '#', // Placeholder as there is no direct link for the parent
+    icon: 'billing',
+    isActive: true
+
+    // items: [
+    //   {
+    //     title: 'Profile',
+    //     url: '/dashboard/profile',
+    //     icon: 'userPen',
+    //     shortcut: ['m', 'm']
+    //   },
+    //   {
+    //     title: 'Login',
+    //     shortcut: ['l', 'l'],
+    //     url: '/',
+    //     icon: 'login'
+    //   }
+    // ]
+  },
+  {
+    title: 'Competitors',
+    url: '/dashboard/kanban',
+    icon: 'kanban',
+    shortcut: ['k', 'k'],
+    isActive: false,
+    items: [] // No child items
+  },
+  {
+    title: 'Assets',
+    url: '/dashboard/kanban',
+    icon: 'kanban',
+    shortcut: ['k', 'k'],
+    isActive: false,
+    items: [] // No child items
+  },
+  {
+    title: 'Resources',
+    url: '/dashboard/kanban',
+    icon: 'kanban',
+    shortcut: ['k', 'k'],
     isActive: false,
     items: [] // No child items
   },
@@ -37,26 +90,24 @@ export const navItems: NavItem[] = [
 
     items: [
       {
-        title: 'Profile',
+        title: 'Settings',
         url: '/dashboard/profile',
         icon: 'userPen',
         shortcut: ['m', 'm']
       },
       {
-        title: 'Login',
+        title: 'Team',
+        url: '/dashboard/profile',
+        icon: 'userPen',
+        shortcut: ['m', 'm']
+      },
+      {
+        title: 'Billing',
         shortcut: ['l', 'l'],
         url: '/',
         icon: 'login'
       }
     ]
-  },
-  {
-    title: 'Kanban',
-    url: '/dashboard/kanban',
-    icon: 'kanban',
-    shortcut: ['k', 'k'],
-    isActive: false,
-    items: [] // No child items
   }
 ];
 
